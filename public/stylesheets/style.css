@@ -1,0 +1,63 @@
+.thumbnail img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  display: block;
+  height: 190px;
+  width: 340px;
+  border-radius: 10px;
+}
+#dash
+{
+  margin-left: 100px;
+}
+#bet{
+  margin-left: 400px;
+  margin-top: 50px;
+  padding-top: px;
+}
+#bets{
+  margin-left: 300px;
+}
+.navbar-nav
+{
+  float:right;
+  margin-left:54%;
+  padding: 0;
+}
+.thumbnail{
+  border:solid;
+  height: 380px;
+  width:350px;
+  border-radius: 10px;
+}
+.gaming
+{
+  margin-left: 450px;
+  color: white;
+
+}
+#button
+{
+  float:right;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+.caption
+{
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.price{
+  font-weight: bold;
+  font-size: 16px;
+}
+.box {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  box-shadow: 2px;
+}
+
+.buttons{
+  align-self: flex-end;
+}

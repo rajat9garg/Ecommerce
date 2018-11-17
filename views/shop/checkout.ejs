@@ -1,0 +1,61 @@
+<% include ../layout/layout.ejs %>
+<div class='row' id="bets">
+  <div class ='col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3'>
+    <h1>Check-Out</h1>
+    <h4>Your Total:<%=totalPrice%></h4>
+    <form action="/checkout" method="post" id = "checkout-form">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" required name="name">
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="Address">Address</label>
+          <input type="text" id="address" class="form-control" required name="address">
+      </div>
+    </div>
+    <hr>
+    <div class="col-xs-12">
+      <div class="form-group">
+        <label for="Card-Holder-Name">Card Holder Name</label>
+        <input type="text" id="card-name" class="form-control" required>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="form-group">
+      <label for="Credit Card Nummber">Credit Card Number</label>
+      <input type="text" id="card-number" class="form-control" required>
+   </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="row" id="bets">
+      <div class="col-xs-12">
+        <div class="form-group" id="dash">
+          <label for="Expiration Month">Expiration Month</label>
+          <input type="text" id="card-expiry-month" class="form-control" required>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="Expiration Year">Expiration Year</label>
+          <input type="text" id="card-expiry-year" class="form-control" required>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="form-group">
+      <label for="CVC">CVC</label>
+      <input type="text" id="card-cvc" class="form-control" required>
+    </div>
+  </div>
+</div>
+<div id="hash">
+<button type="submit" class="btn btn-success">Buy Now</button>
+</div>
+</form>
+</div>
+</div>

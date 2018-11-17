@@ -1,0 +1,35 @@
+<% include ../layout/layout.ejs %>
+<% if(products) {%>
+  <div class='row' id="bet">
+    <div class ='col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3'>
+      <ul class ="list-group">
+        <% for(var i=0; i< products.length;i++) { %>
+        <li class = "list-group-item">
+          <span class="badge"><%=products[i].qty%></span>
+          <strong><%=products[i].item.title %></strong>
+          <span class = "label label-success"><%=products[i].price%></span>
+
+          </li>
+          <% } %>
+          </ul>
+    </div>
+  </div>
+  <div class='row' id="bet">
+    <div class ='col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3'>
+      <strong>total:<%=totalPrice %></strong>
+    </div>
+  </div>
+  <hr>
+  <div class='row' id="bet">
+    <div class ='col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3'>
+      <a href="/checkout" type="button" class="btn btn-success">Check-Out</a>
+    </div>
+  </div>
+  <% } %>
+  <% if(!products) {%>
+<div class='row' id="bet">
+  <div class ='col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3'>
+    <h2>No items in the Cart</h2>
+  </div>
+</div>
+<% } %>
